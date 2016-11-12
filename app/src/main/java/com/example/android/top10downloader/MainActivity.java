@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private class DownloadData extends AsyncTask<String, Void, String> {
         private static final String TAG = "DownloadData";
-        
+
         @Override
         protected String doInBackground(String... strings) {
             Log.d(TAG, "doInBackground: starts with " + strings[0]);
