@@ -10,9 +10,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import static android.R.attr.y;
-import static com.example.android.top10downloader.R.id.tvName;
-
 
 public class FeedAdapter extends ArrayAdapter {
     private static final String TAG = "FeedAdapter";
@@ -35,7 +32,7 @@ public class FeedAdapter extends ArrayAdapter {
     @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder viewHolder
+        ViewHolder viewHolder;
 
         if (convertView == null) {
             convertView = layoutInflater.inflate(layoutResource, parent, false);
